@@ -65,7 +65,7 @@ export const MainPage = ({children}) => {
   };
 
   const UserLogout =()=>{
-    window.location.href = '/Login';
+    window.location.href = '/crmfrontend';
   }
 
   // const [viewsidebar,setviewsidebar]=useState(true)

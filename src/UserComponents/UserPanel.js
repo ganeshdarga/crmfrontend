@@ -56,7 +56,7 @@ export const UserPanel = ({children}) => {
   };
 
   const UserLogout =()=>{
-    window.location.href = '/Login';
+    window.location.href = '/crmfrontend';
   }
 
   const [notificatiobn,setnotification] = useState(false)
