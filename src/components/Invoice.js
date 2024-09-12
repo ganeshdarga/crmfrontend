@@ -30,7 +30,7 @@ const Invoice = () => {
   
 
   const getinvoice = ()=>{
-    Axios.get("https://crmbackend-2.onrender.com/api/v1/invoice/",{
+    Axios.get("https://crmbackend-1-t10q.onrender.com/api/v1/invoice/",{
     }).then((res)=>{
       setinvoicedata(res.data)
     })
@@ -65,7 +65,7 @@ const Invoice = () => {
       alert("please fill all the fields")
     }
     else{
-      Axios.post("https://crmbackend-2.onrender.com/api/v1/invoice/addinvoice/",{
+      Axios.post("https://crmbackend-1-t10q.onrender.com/api/v1/invoice/addinvoice/",{
         accountnumber:accountnumber,
         account:account,
         amount:amount,
@@ -91,7 +91,7 @@ const Invoice = () => {
     setdelete1(true)
   }
   const submitdeletedata = (id)=>{
-    Axios.delete("https://crmbackend-2.onrender.com/api/v1/invoice/deleteinvoice/",{data:{deleteId:deleteId}
+    Axios.delete("https://crmbackend-1-t10q.onrender.com/api/v1/invoice/deleteinvoice/",{data:{deleteId:deleteId}
     }).then((res)=>{
       alert("Successfully deleted")
       getinvoice()
@@ -111,7 +111,7 @@ const Invoice = () => {
       alert("please fill all the fields")
     }
     else{
-      Axios.post(`https://crmbackend-2.onrender.com/api/v1/invoice/subinvoiceedit/?id=${id}`,{
+      Axios.post(`https://crmbackend-1-t10q.onrender.com/api/v1/invoice/subinvoiceedit/?id=${id}`,{
         accountnumber:accountnumber,
         account:account,
         amount:amount,

@@ -153,7 +153,7 @@ const Login = ({children,setAdminpanelData,setUserPanelData}) => {
       //     setSuccess("An success occured while signing up")
       //     console.success("Sigiup Failed:",success)
       //   })
-        Axios.post("https://crmbackend-2.onrender.com/api/v1/user/",{
+        Axios.post("https://crmbackend-1-t10q.onrender.com/api/v1/user/",{
           name:name,
           email:email,
           alt_email:"sony@gmail.com",
@@ -178,7 +178,7 @@ const Login = ({children,setAdminpanelData,setUserPanelData}) => {
 
     //AdminLogin
     function AdminLogin1(){
-      Axios.get('https://crmbackend-2.onrender.com/api/v1/admin/',{
+      Axios.get('https://crmbackend-1-t10q.onrender.com/api/v1/admin/',{
       adminname:adminname,
       adminpassword:adminpassword,
       }).then((response)=>{
@@ -200,7 +200,7 @@ const Login = ({children,setAdminpanelData,setUserPanelData}) => {
 
 //userLogin
   function UserLogin(){
-    Axios.get('https://crmbackend-2.onrender.com/api/v1/user/',{
+    Axios.get('https://crmbackend-1-t10q.onrender.com/api/v1/user/',{
     useremail:useremail,
     userpassword:userpassword,
   }).then((response)=>{

@@ -9,7 +9,7 @@ const AdminQuote = () => {
   const [data1,setdata1]=useState(true)
 
   const getQuotes = () => {
-    Axios.get("https://crmbackend-2.onrender.com/api/v1/prequest/", {}).then((res) => {
+    Axios.get("https://crmbackend-1-t10q.onrender.com/api/v1/prequest/", {}).then((res) => {
       setQuotesData(res.data);
     });
   };
@@ -30,7 +30,7 @@ const AdminQuote = () => {
 // .catch((err) => {
 //     alert("No data found");
 // });
-    Axios.get(`https://crmbackend-2.onrender.com/api/v1/prequest/getiddata/?id=${id}`,{
+    Axios.get(`https://crmbackend-1-t10q.onrender.com/api/v1/prequest/getiddata/?id=${id}`,{
     }).then((res)=>{
       setCustomdata(res.data)
     }).catch((err)=>{

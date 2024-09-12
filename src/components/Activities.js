@@ -20,7 +20,7 @@ const Activities = () => {
   const [addEndtime,setEndtime]=useState("")
   const [addDis,setDis]=useState("")
   const getactivities = ()=>{
-    Axios.get("https://crmbackend-2.onrender.com/api/v1/activities/",{
+    Axios.get("https://crmbackend-1-t10q.onrender.com/api/v1/activities/",{
     }).then((res)=>{
       setactivities(res.data)
     })
@@ -39,7 +39,7 @@ const Activities = () => {
     setdelete1(false)
   }
   const addActivitys =()=>{
-    Axios.post("https://crmbackend-2.onrender.com/api/v1/activities/addactivity/",{
+    Axios.post("https://crmbackend-1-t10q.onrender.com/api/v1/activities/addactivity/",{
       addDate:addDate,
       addDay:addDay,
       addStarttime:addStarttime,
@@ -62,7 +62,7 @@ const Activities = () => {
   }
  
   const submitdeletedata = (id)=>{
-    Axios.delete("https://crmbackend-2.onrender.com/api/v1/activities/deleteactivity/",{data:{deleteId:deleteId}
+    Axios.delete("https://crmbackend-1-t10q.onrender.com/api/v1/activities/deleteactivity/",{data:{deleteId:deleteId}
     }).then((res)=>{
       alert("Successfully deleted")
       getactivities()
@@ -83,7 +83,7 @@ const Activities = () => {
       alert("pleas fill all the fields")
     }
     else{
-      Axios.post(`https://crmbackend-2.onrender.com/api/v1/activities/editactivity/?id=${id}`,{
+      Axios.post(`https://crmbackend-1-t10q.onrender.com/api/v1/activities/editactivity/?id=${id}`,{
         addDate:addDate,
         addDay:addDay,
         addStarttime:addStarttime,

@@ -26,7 +26,7 @@ const Profile = () => {
   const [profiledata,setProfileData] = useState([])
 
   const viewProfile=()=>{
-    Axios.get(`https://crmbackend-2.onrender.com/api/v1/user/viewUser/?userEmail=${userEmail}`).then((response)=>{
+    Axios.get(`https://crmbackend-1-t10q.onrender.com/api/v1/user/viewUser/?userEmail=${userEmail}`).then((response)=>{
         setProfileData(response.data)
     }).catch((err)=>{
       alert("data not found")
@@ -49,7 +49,7 @@ const Profile = () => {
       alert("pleas fill all the fields")
     }
     else{
-      Axios.post(`https://crmbackend-2.onrender.com/api/v1/user/setuserEdit/?userEmail=${userEmail}`,{
+      Axios.post(`https://crmbackend-1-t10q.onrender.com/api/v1/user/setuserEdit/?userEmail=${userEmail}`,{
       userName:userName,
       userEmail_id:userEmail_id,
       useAlterEmail:useAlterEmail,

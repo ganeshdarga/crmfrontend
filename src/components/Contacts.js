@@ -9,7 +9,7 @@ const Contacts = () => {
   const [edit, setEdit] = useState(false);
 
   const getUserdata = () => {
-    Axios.get("https://crmbackend-2.onrender.com/api/v1/user/", {}).then((res) => {
+    Axios.get("https://crmbackend-1-t10q.onrender.com/api/v1/user/", {}).then((res) => {
       setUserdata(res.data);
     });
   };
@@ -49,7 +49,7 @@ const Contacts = () => {
     ) {
       alert("pleas fill all the fields");
     } else {
-      Axios.post(`https://crmbackend-2.onrender.com/api/v1/user/submitedit/?Id=${Id}`, {
+      Axios.post(`https://crmbackend-1-t10q.onrender.com/api/v1/user/submitedit/?Id=${Id}`, {
         Username: Username,
         userEmail: userEmail,
         useAlterEmail: useAlterEmail,
@@ -78,7 +78,7 @@ const Contacts = () => {
   };
 
   const submitdeletedata1 = () => {
-    Axios.delete("https://crmbackend-2.onrender.com/api/v1/user/submitdelete/", {data:{Id1:Id1}}).then(
+    Axios.delete("https://crmbackend-1-t10q.onrender.com/api/v1/user/submitdelete/", {data:{Id1:Id1}}).then(
       (res) => {
         alert("Successfully deleted");
         getUserdata();

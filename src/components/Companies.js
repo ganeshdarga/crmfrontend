@@ -19,7 +19,7 @@ const Companies = () => {
 
 
   const getcompanies = ()=>{
-    Axios.get("https://crmbackend-2.onrender.com/api/v1/companies/",{
+    Axios.get("https://crmbackend-1-t10q.onrender.com/api/v1/companies/",{
     }).then((res)=>{
       setcompanydata(res.data)
     })
@@ -54,7 +54,7 @@ const Companies = () => {
       alert("please fill all the fields")
     }
     else{
-      Axios.post("https://crmbackend-2.onrender.com/api/v1/companies/addcompany/",{
+      Axios.post("https://crmbackend-1-t10q.onrender.com/api/v1/companies/addcompany/",{
         companyname:companyname,
         companyemail:companyemail,
         comapanymobile:comapanymobile,
@@ -78,7 +78,7 @@ const Companies = () => {
     setdelete1(true)
   }
   const submitdeletedata = (id)=>{
-    Axios.delete("https://crmbackend-2.onrender.com/api/v1/companies/detetecompanydata/",{data:{deleteId:deleteId}
+    Axios.delete("https://crmbackend-1-t10q.onrender.com/api/v1/companies/detetecompanydata/",{data:{deleteId:deleteId}
     }).then((res)=>{
       alert("Successfully deleted")
       getcompanies()
@@ -99,7 +99,7 @@ const Companies = () => {
       alert("please fill all the fields")
     }
     else{
-      Axios.post(`https://crmbackend-2.onrender.com/api/v1/companies/subcompanyedit/?id=${id}`,{
+      Axios.post(`https://crmbackend-1-t10q.onrender.com/api/v1/companies/subcompanyedit/?id=${id}`,{
         companyname:companyname,
         companyemail:companyemail,
         comapanymobile:comapanymobile,

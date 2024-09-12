@@ -15,7 +15,7 @@ const Leads = () => {
 
 
   const getleads = ()=>{
-    Axios.get("https://crmbackend-2.onrender.com/api/v1/leads/",{
+    Axios.get("https://crmbackend-1-t10q.onrender.com/api/v1/leads/",{
     }).then((res)=>{
       setleaddata(res.data)
     })
@@ -51,7 +51,7 @@ const Leads = () => {
       alert("please fill all the fields")
     }
     else{
-      Axios.post("https://crmbackend-2.onrender.com/api/v1/leads/addleads/",{
+      Axios.post("https://crmbackend-1-t10q.onrender.com/api/v1/leads/addleads/",{
         leadname:leadname,
         leadtitle:leadtitle,
         leadcompany:leadcompany,
@@ -78,7 +78,7 @@ const Leads = () => {
     setdelete1(true)
   }
   const submitdeletedata = (id)=>{
-    Axios.delete("https://crmbackend-2.onrender.com/api/v1/leads/deteteleaddata/",{data:{deleteId:deleteId}
+    Axios.delete("https://crmbackend-1-t10q.onrender.com/api/v1/leads/deteteleaddata/",{data:{deleteId:deleteId}
     }).then((res)=>{
       alert("Successfully deleted")
       getleads()
@@ -99,7 +99,7 @@ const Leads = () => {
       alert("please fill all the fields")
     }
     else{
-      Axios.post(`https://crmbackend-2.onrender.com/api/v1/leads/leadedit/?id=${id}`,{
+      Axios.post(`https://crmbackend-1-t10q.onrender.com/api/v1/leads/leadedit/?id=${id}`,{
         leadname:leadname,
         leadtitle:leadtitle,
         leadcompany:leadcompany,

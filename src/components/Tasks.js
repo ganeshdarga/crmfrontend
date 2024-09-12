@@ -23,7 +23,7 @@ const Tasks = () => {
   const [taskdata,settaskdata]=useState([])
 
   const gettasks = ()=>{
-    Axios.get("https://crmbackend-2.onrender.com/api/v1/tasks/",{
+    Axios.get("https://crmbackend-1-t10q.onrender.com/api/v1/tasks/",{
     }).then((res)=>{
       settaskdata(res.data)
     })
@@ -56,7 +56,7 @@ const Tasks = () => {
       alert("please fill all the fields")
     }
     else{
-      Axios.post("https://crmbackend-2.onrender.com/api/v1/tasks/addtask/",{
+      Axios.post("https://crmbackend-1-t10q.onrender.com/api/v1/tasks/addtask/",{
         taskname:taskname,
         deadline:deadline,
         taskstatus:taskstatus,
@@ -83,7 +83,7 @@ const Tasks = () => {
   }
 
   const submitdeletedata1 = (id)=>{
-    Axios.delete("https://crmbackend-2.onrender.com/api/v1/tasks/deletetask/",{data:{Id1:Id1
+    Axios.delete("https://crmbackend-1-t10q.onrender.com/api/v1/tasks/deletetask/",{data:{Id1:Id1
     }}).then((res)=>{
       alert("Successfully deleted")
       gettasks()
@@ -103,7 +103,7 @@ const Tasks = () => {
       alert("please fill all the fields")
     }
     else{
-      Axios.post(`https://crmbackend-2.onrender.com/api/v1/tasks/edittask/?id=${id}`,{
+      Axios.post(`https://crmbackend-1-t10q.onrender.com/api/v1/tasks/edittask/?id=${id}`,{
         taskname:taskname,
         deadline:deadline,
         taskstatus:taskstatus,

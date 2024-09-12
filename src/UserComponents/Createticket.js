@@ -17,7 +17,7 @@ const Createticket = () => {
 
 
     const SubmitTicket = ()=>{
-        Axios.post("https://crmbackend-2.onrender.com/api/v1/ticket/create_ticket/",{
+        Axios.post("https://crmbackend-1-t10q.onrender.com/api/v1/ticket/create_ticket/",{
             subject:subject,
             tasktype:tasktype,
             Prioritys:Prioritys,
