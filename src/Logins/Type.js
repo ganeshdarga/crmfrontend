@@ -6,7 +6,7 @@ function Type() {
     <Typewriter
       options={{
         strings: [
-          "WELCOME TO COAPPS CUSTOMER RELATION MANAGEMENT SYSTEM",
+          "WELCOME TO CUSTOMER RELATION MANAGEMENT SYSTEM",
         ],
         autoStart: true,
         loop: true,
