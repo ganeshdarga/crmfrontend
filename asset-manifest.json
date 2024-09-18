@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/crmfrontend/static/css/main.1da9a4e1.css",
-    "main.js": "/crmfrontend/static/js/main.515d0a47.js",
+    "main.css": "/crmfrontend/static/css/main.1c3b2576.css",
+    "main.js": "/crmfrontend/static/js/main.0a0116d5.js",
     "static/js/453.05f8c4a7.chunk.js": "/crmfrontend/static/js/453.05f8c4a7.chunk.js",
     "static/media/ganesh.jpg": "/crmfrontend/static/media/ganesh.6f5b8aa6828a13babea5.jpg",
     "static/media/requestquote.jpg": "/crmfrontend/static/media/requestquote.677535324e8da23582fe.jpg",
@@ -9,12 +9,12 @@
     "static/media/ravi.jpg": "/crmfrontend/static/media/ravi.df98c8dfe86e8734bd99.jpg",
     "static/media/deal.jpg": "/crmfrontend/static/media/deal.e711e19a88f47dae577c.jpg",
     "index.html": "/crmfrontend/index.html",
-    "main.1da9a4e1.css.map": "/crmfrontend/static/css/main.1da9a4e1.css.map",
-    "main.515d0a47.js.map": "/crmfrontend/static/js/main.515d0a47.js.map",
+    "main.1c3b2576.css.map": "/crmfrontend/static/css/main.1c3b2576.css.map",
+    "main.0a0116d5.js.map": "/crmfrontend/static/js/main.0a0116d5.js.map",
     "453.05f8c4a7.chunk.js.map": "/crmfrontend/static/js/453.05f8c4a7.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.1da9a4e1.css",
-    "static/js/main.515d0a47.js"
+    "static/css/main.1c3b2576.css",
+    "static/js/main.0a0116d5.js"
   ]
 }
