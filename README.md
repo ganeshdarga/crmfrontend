@@ -1,70 +1,75 @@
-# Getting Started with Create React App
+demolink: https://ganeshdarga.github.io/crmfrontend/
+adminusername: admin.
+password: admin123
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Here’s a detailed explanation of how to set up the CRM project on your local system, based on your instructions:
+Steps to Set Up the CRM Project Locally:
+1. Download and Extract the Files
+Download the ZIP files for crmfrontend and crmbackend from your repository.
+Once the ZIP files are downloaded, extract them. You should now have two separate directories:
+crmfrontend (contains the frontend code)
+crmbackend (contains the backend code)
+2. Install Required Dependencies and Libraries
+You'll need to install several dependencies to make the project work, including Node.js libraries for the frontend and Django-related packages for the backend.
+Frontend Dependencies (React-based)
+Navigate to the crmfrontend directory:
+cd path/to/crmfrontend
+Install the dependencies using npm (or yarn). These dependencies include things like:
+Node.js: The runtime for JavaScript applications.
+React Routers: For handling routing in React.
+Axios: For making HTTP requests to the backend API.
+React Icons: For using icons in the UI.
+React Graphs: For generating charts or graphs.
+Install them by running:
+npm install
+You can see all the required dependencies listed in the package.json file. The import statements in the code will also show which libraries are needed.
+Backend Dependencies (Django-based)
+Navigate to the crmbackend directory:
+cd path/to/crmbackend
+Install Python and Django-related dependencies. You’ll need:
+Django: The web framework used to build the backend.
+Django REST Framework (DRF): To create the RESTful API for the backend.
+Install all necessary libraries listed in the requirements.txt file:
+pip install -r requirements.txt
+This will install Django, Django REST Framework, and any other required packages for the backend.
 
-## Available Scripts
+3. Configure Backend Settings (Django)
+Once the backend dependencies are installed, you’ll need to configure the crmbackend project to connect to your local database.
+Navigate to settings.py in the crmbackend directory:
+cd path/to/crmbackend/crmproject
+nano settings.py  # or use any code editor like VSCode
+Configure the Database Settings:
+In the settings.py file, find the DATABASES section and modify it to reflect your local database setup.
+For example, if you’re using PostgreSQL, you would configure it like this:
+python
+Copy code
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'your_database_name',
+        'USER': 'your_database_user',
+        'PASSWORD': 'your_password',
+        'HOST': 'localhost',
+        'PORT': '5432',
+    }
+}
+If you're using MySQL or SQLite, update the settings accordingly.
+Apply Database Migrations:
+Once the database is configured, you need to apply the migrations to set up the database schema.
+Run the following command to perform migrations:
+python manage.py migrate
+This will create all necessary tables in the database.
 
-In the project directory, you can run:
+4. Start the Backend Server (Django)
+Start the Django backend server by running the following command in the crmbackend directory:
+python manage.py runserver
+This will start your backend server, and you can access the API at:
+http://localhost:8000
 
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+6. Start the Frontend Development Server (React)
+Navigate to the crmfrontend directory:
+cd path/to/crmfrontend
+Run the React development server using npm:
+npm start
+The React frontend will start running, and you can view the project in your browser at:
+http://localhost:3000
