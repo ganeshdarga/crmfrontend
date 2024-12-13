@@ -153,7 +153,7 @@
 //       //     setSuccess("An success occured while signing up")
 //       //     console.success("Sigiup Failed:",success)
 //       //   })
-//         Axios.post("https://crmbackend-1-t10q.onrender.com/api/v1/user/",{
+//         Axios.post("https://crmbackend-1-9mff.onrender.com/api/v1/user/",{
 //           name:name,
 //           email:email,
 //           alt_email:"sony@gmail.com",
@@ -178,7 +178,7 @@
 
 //     //AdminLogin
 //     function AdminLogin1(){
-//       Axios.get('https://crmbackend-1-t10q.onrender.com/api/v1/admin/',{
+//       Axios.get('https://crmbackend-1-9mff.onrender.com/api/v1/admin/',{
 //       adminname:adminname,
 //       adminpassword:adminpassword,
 //       }).then((response)=>{
@@ -200,7 +200,7 @@
 
 // //userLogin
 //   function UserLogin(){
-//     Axios.get('https://crmbackend-1-t10q.onrender.com/api/v1/user/',{
+//     Axios.get('https://crmbackend-1-9mff.onrender.com/api/v1/user/',{
 //     useremail:useremail,
 //     userpassword:userpassword,
 //   }).then((response)=>{
@@ -537,7 +537,7 @@ const Login = ({ children, setAdminpanelData, setUserPanelData }) => {
 
     setLoading(true);  // Show loading spinner
 
-    Axios.post("https://crmbackend-1-t10q.onrender.com/api/v1/user/", {
+    Axios.post("https://crmbackend-1-9mff.onrender.com/api/v1/user/", {
       name: name,
       email: email,
       alt_email: "sony@gmail.com",
@@ -562,7 +562,7 @@ const Login = ({ children, setAdminpanelData, setUserPanelData }) => {
   const AdminLogin1 = () => {
     setLoading(true);
     setHeight(500)  // Show loading spinner
-    Axios.get('https://crmbackend-1-t10q.onrender.com/api/v1/admin/', {
+    Axios.get('https://crmbackend-1-9mff.onrender.com/api/v1/admin/', {
       adminname: adminname,
       adminpassword: adminpassword,
     }).then((response) => {
@@ -585,7 +585,7 @@ const Login = ({ children, setAdminpanelData, setUserPanelData }) => {
   const UserLogin = () => {
     setHeight(500) 
     setLoading(true);  // Show loading spinner
-    Axios.get('https://crmbackend-1-t10q.onrender.com/api/v1/user/', {
+    Axios.get('https://crmbackend-1-9mff.onrender.com/api/v1/user/', {
       useremail: useremail,
       userpassword: userpassword,
     }).then((response) => {
