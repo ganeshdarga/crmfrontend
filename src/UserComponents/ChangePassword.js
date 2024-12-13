@@ -60,7 +60,7 @@ const ChangePassword = () => {
       return;
     }
 
-    Axios.post('https://crmbackend-1-t10q.onrender.com/api/v1/user/changepassword/',{
+    Axios.post('https://crmbackend-1-9mff.onrender.com/api/v1/user/changepassword/',{
       userEmail:userEmail,
       currentpassword:currentpassword,
       newpassword:newpassword
