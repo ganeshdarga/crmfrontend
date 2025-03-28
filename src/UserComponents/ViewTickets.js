@@ -17,7 +17,7 @@ const ViewTickets = () => {
 
   useEffect(() => {
     const tickestlist=()=>{
-      Axios.get(`https://crmbackend-1-9mff.onrender.com/api/v1/ticket/view_ticket/?userEmail=${userEmail}`)
+      Axios.get(`https://crmbackendso.onrender.com/api/v1/ticket/view_ticket/?userEmail=${userEmail}`)
       .then((response) => {
         setTickets1(response.data);
       })
