@@ -9,7 +9,7 @@ const AdminQuote = () => {
   const [data1,setdata1]=useState(true)
 
   const getQuotes = () => {
-    Axios.get("https://crmbackend-1-9mff.onrender.com/api/v1/prequest/", {}).then((res) => {
+    Axios.get("https://crmbackendso.onrender.com/api/v1/prequest/", {}).then((res) => {
       setQuotesData(res.data);
     });
   };
@@ -30,7 +30,7 @@ const AdminQuote = () => {
 // .catch((err) => {
 //     alert("No data found");
 // });
-    Axios.get(`https://crmbackend-1-9mff.onrender.com/api/v1/prequest/getiddata/?id=${id}`,{
+    Axios.get(`https://crmbackendso.onrender.com/api/v1/prequest/getiddata/?id=${id}`,{
     }).then((res)=>{
       setCustomdata(res.data)
     }).catch((err)=>{
@@ -64,7 +64,7 @@ const AdminQuote = () => {
       alert("please fill all the fields")
     }
     else{
-      Axios.post(`http://localhost:3002/submitcustomdata/${id}`,{
+      Axios.post(`https://crmbackendso.onrender.com/api/v1/submitcustomdata/${id}`,{
       status1:status1,
       adminremark:adminremark
     }).then((res)=>{
@@ -73,7 +73,7 @@ const AdminQuote = () => {
       alert("No data found")
     })
 
-    Axios.post(`http://localhost:3002/sendnotification/${email}`,{
+    Axios.post(`https://crmbackendso.onrender.com/api/v1/sendnotification/${email}`,{
       statusquote:statusquote,
       adminremark:adminremark
     }).then((res)=>{
