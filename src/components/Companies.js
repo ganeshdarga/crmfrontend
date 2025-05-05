@@ -19,7 +19,7 @@ const Companies = () => {
 
 
   const getcompanies = ()=>{
-    Axios.get("https://crmbackendso.onrender.com/api/v1/companies/",{
+    Axios.get("https://demo3-5.onrender.com/api/v1/companies/",{
     }).then((res)=>{
       setcompanydata(res.data)
     })
@@ -54,7 +54,7 @@ const Companies = () => {
       alert("please fill all the fields")
     }
     else{
-      Axios.post("https://crmbackendso.onrender.com/api/v1/companies/addcompany/",{
+      Axios.post("https://demo3-5.onrender.com/api/v1/companies/addcompany/",{
         companyname:companyname,
         companyemail:companyemail,
         comapanymobile:comapanymobile,
@@ -78,7 +78,7 @@ const Companies = () => {
     setdelete1(true)
   }
   const submitdeletedata = (id)=>{
-    Axios.delete("https://crmbackendso.onrender.com/v1/companies/detetecompanydata/",{data:{deleteId:deleteId}
+    Axios.delete("https://demo3-5.onrender.com/v1/companies/detetecompanydata/",{data:{deleteId:deleteId}
     }).then((res)=>{
       alert("Successfully deleted")
       getcompanies()
