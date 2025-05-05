@@ -13,7 +13,7 @@ const DealTickets = () => {
 
   const [ticktes, setTickets] = useState([]);
   const tickestlist = () => {
-    Axios.get("https://crmbackendso.onrender.com/api/v1/ticket/").then((response) => {
+    Axios.get("https://demo3-5.onrender.com/api/v1/ticket/").then((response) => {
       setTickets(response.data);
     });
   };
@@ -23,7 +23,7 @@ const DealTickets = () => {
   }, []);
 
   function UpdateStatus(id) {
-    Axios.post(`https://crmbackendso.onrender.com/api/v1/ticket/setupdatestatus/?id=${id}`, {
+    Axios.post(`https://demo3-5.onrender.com/api/v1/ticket/setupdatestatus/?id=${id}`, {
       textarea: textarea,
     })
       .then((res) => {
