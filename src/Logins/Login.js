@@ -576,7 +576,7 @@ const Login = ({ children, setAdminpanelData, setUserPanelData }) => {
       }
     }).catch((error) => {
       setLoading(false);  // Hide loading spinner
-      setLoginStatus('An error occurred while logging in.');
+      setLoginStatus('An error occurred while logging in please recheck.');
       console.error('Login failed:', error);
     });
   };
