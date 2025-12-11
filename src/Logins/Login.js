@@ -537,7 +537,7 @@ const Login = ({ children, setAdminpanelData, setUserPanelData }) => {
 
     setLoading(true);  // Show loading spinner
 
-    Axios.post("https://demo3-5.onrender.com/api/v1/user/", {
+    Axios.post("https://crmbackend-67.onrender.com/api/v1/user/", {
       name: name,
       email: email,
       alt_email: "sony@gmail.com",
@@ -562,7 +562,7 @@ const Login = ({ children, setAdminpanelData, setUserPanelData }) => {
   const AdminLogin1 = () => {
     setLoading(true);
     setHeight(500)  // Show loading spinner
-    Axios.get('https://demo3-5.onrender.com/api/v1/admin/', {
+    Axios.get('https://crmbackend-67.onrender.com/api/v1/admin/', {
       adminname: adminname,
       adminpassword: adminpassword,
     }).then((response) => {
@@ -585,7 +585,7 @@ const Login = ({ children, setAdminpanelData, setUserPanelData }) => {
   const UserLogin = () => {
     setHeight(500) 
     setLoading(true);  // Show loading spinner
-    Axios.get('https://demo3-5.onrender.com/api/v1/user/', {
+    Axios.get('https://crmbackend-67.onrender.com/api/v1/user/', {
       useremail: useremail,
       userpassword: userpassword,
     }).then((response) => {
