@@ -16,7 +16,7 @@ const QuoteRequest = () => {
       alert("Please Fill All the fields")
     }
     else{
-      Axios.post("https://demo3-5.onrender.com/api/v1/prequest/submit_request/", {
+      Axios.post("https://crmbackend-67.onrender.com/api/v1/prequest/submit_request/", {
       serviseUser: serviseUser,
       serviceEmail: serviceEmail,
       serviceContact: serviceContact,
